@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validation</title>
+  <script src="./Assets/jquery-3.7.1.min.js"></script>
+  <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./tables_forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-primary">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container mobile_block">
+        <a href="/" class="navbar-brand">
+          <img
+            src="https://content.jdmagicbox.com/comp/chennai/y8/044pxx44.xx44.170711121351.r5y8/catalogue/revive-technologies-porur-chennai-computer-software-consultants-86art88h9q.jpg"
+            width="35" height="35" alt="Bootstrap logo" loading="lazy" class="d-inline-block align-top">
+          REVIVE TECHNOLOGIES
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaricon"
+          aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbaricon">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./Nav.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
+                  class="bi bi-house-door" viewBox="0 1 15 19">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                </svg> Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Contact</a>
+              <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbardropdown">
+                <a class="dropdown-item" href="#">Mail</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Website</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Help</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <form action="#" method="POST" id="loginForm" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="abc@example.com"
+                    aria-describedby="email" required />
+                  <div class="valid-feedback text-end">Valid Mail</div>
+                  <div class="invalid-feedback text-end">Invalid Email</div>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label for="password">Password</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa fa-key"></i>
+                  </span>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Password"
+                                        required />
+                   
+                  <div class="invalid-feedback" id="password-feedback"></div>
+                </div>
+              </div>
+
+              <div class="form-check form check inline mb-3 text-center">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" class="form-check-label">I Agree
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#terms">Terms and Conditions</a></label>
+              </div>
+
+              <div class="d-grid">
+                <button type="button" id="addButton" class="btn btn-success" disabled>
+                    <span id="addButtonSpinner" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" style="display: none;"></span>
+                    Add Transaction
+                </button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast start -->
+  
+
+    <div class="container-lg  text-center mt-5">
+      <button id="toastbtn" class="btn btn-primary">Show Toast</button>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 p-5" ">
+      <div class="toast shadow-xl bg-success text-white p-3 mb-5 rounded toast-lg  " role="alert" id="toastElement">
+          <div class="toast-header">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="userimage" width="60px"  >
+              <h6 class="me-auto">This is info</h6>
+              <small>2 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body  text-center">
+              Hi login successfully..!!
+          </div>
+      </div>
+  </div>
+ 
+  <!-- Toast end -->
+
+
+  <!-- Model -->
+  <div class="modal modal-xl modal-fullscreen-sm-down fade" id="terms" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal1">
+            Terms and conditions
+          </h4>
+          <button class="btn btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="text-danger"><u>Agree the Terms and conditions</u></h6>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis odit adipisci tempore delectus, quisquam nulla corrupti quo, praesentium eum ipsum labore mollitia molestias harum, enim modi beatae facere
+            saepe</p>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-success" data-bs-dismiss="modal" data-bs-target="#terms2"
+            data-bs-toggle="modal"></i>Agrred and Next <i class="fa-solid fa-arrow-right fa-shake"></i>
+          </button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second modal -->
+  <div class="modal modal-xl fade" id="terms2" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">
+            Terms and conditions 2
+          </h4>
+          <button class="btn btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="text-danger"><u>Agree the Terms and conditions</u></h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis odit adipisci tempore delectus,
+            quisquam nulla corrupti quo, praesentium eum ipsum labore mollitia molestias harum, enim modi beatae facere
+            saepe</p>
+        </div>
+
+        <div class="modal-footer">
+
+          <button class="btn btn-warning" data-bs-target="#terms" data-bs-toggle="modal" data-bs-dismiss="modal"><i
+              class="fa-solid fa-arrow-left fa-shake" style="margin-right: 15px;"></i>Back to Term1</button>
+          <button class="btn btn-success" data-bs-dismiss="modal"><i class="fa-sharp fa-solid fa-check fa-bounce"></i>
+            Agree</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Script of validation -->
+<script>
+    (function () {
+      "use strict";
+      window.addEventListener("load", function () {
+        let forms = document.getElementsByTagName("form");
+        Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener("submit", function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <!-- Script of toast -->
+  <script>
+    let toastbtn = document.getElementById("toastbtn");
+    let toastelement = document.getElementById("toastElement");
+    toastbtn.addEventListener("click", function () {
+      let toast = new bootstrap.Toast(toastelement);
+      toast.show();
+    });
+  </script>
+<!-- <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('loginForm');
+      
+      form.addEventListener('submit', function(event) {
+          var password = document.getElementById('password');
+          if (password.validity.patternMismatch) {
+              password.classList.add('is-invalid');
+          } else {
+              password.classList.remove('is-invalid');
+          }
+      });
+
+      form.addEventListener('input', function(event) {
+          var password = document.getElementById('password');
+          if (password.validity.patternMismatch) {
+              password.classList.add('is-invalid');
+          } else {
+              password.classList.remove('is-invalid');
+          }
+      });
+  });
+</script> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('loginForm');
+      var password = document.getElementById('password');
+      var feedback = document.getElementById('password-feedback');
+
+      function validatePassword() {
+          var value = password.value;
+          var errors = [];
+        //  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}
+          if (!/[A-Z]/.test(value)) {
+              errors.push("1. Must include an uppercase letter.");
+          }
+          if (!/[a-z]/.test(value)) {
+              errors.push("2. Must include a lowercase letter.");
+          }
+          if (!/[0-9]/.test(value)) {
+              errors.push("3. Must include a number.");
+          }
+          if (!/[!@#$%^&*()_+{}\[\]:;"'<>,.?~`|\\/-]/.test(value)) {
+              errors.push("4. Must include a special character.");
+          }
+          if (value.length < 8) {
+              errors.push("5. Must be at least 8 characters.");
+          }
+
+          if (errors.length > 0) {
+              feedback.innerHTML = errors.join('<br>'); 
+              password.classList.add('is-invalid');
+          } else {
+              feedback.innerHTML = ''; 
+              password.classList.remove('is-invalid');
+          }
+      }
+
+      form.addEventListener('input', validatePassword);
+
+      form.addEventListener('submit', function(event) {
+          validatePassword();
+          if (password.classList.contains('is-invalid')) {
+              event.preventDefault(); 
+          }
+      });
+  });
+</script>
+
+`
+
+
+
+</body>
+
+</html>
