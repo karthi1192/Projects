@@ -1,0 +1,422 @@
+*
+{
+    border:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+/* navigation part */
+nav
+{
+    
+    position: relative;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+        display: flex;
+        float: right;
+         
+
+}
+nav a
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    font-family: Cambria;
+    color: antiquewhite;
+    font-size: 18px;
+    border: none;
+    display: none;
+    cursor: pointer;
+   
+
+}
+.navigation a :hover
+{
+    color: azure;
+    transition-duration: 1s;
+    background-color: rgb(224, 236, 8);
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-radius: 20px;
+    padding: 7px;
+    cursor: pointer;
+    display: none;
+}
+/* Header for photo, h1, p  */
+#h1 p
+{
+    font-size: 16px;
+    line-height: 29px;
+    margin: 8px 60px 0 150px;
+    color: white;
+ } 
+/* #h1
+{
+    position: sticky;
+    top: 0;
+
+}  */
+#h1 h1
+{
+    line-height: 29px;
+    margin: -2px 20px 10px 140px;
+    color: white;
+    padding-top: 40px;
+    font-family: Cambria;
+    font-size: 32px;
+    text-shadow: 12px 12px 20px 0 rgb(199, 173, 177);
+}
+.apj
+{
+    width: 125px;
+    clip-path: circle();
+    position: absolute;
+    top: 1px;
+    margin: 15px;
+}
+#h1
+
+{
+    background-color: rgb(230, 67, 45);
+    height: 150px;
+}
+
+/* contents */
+
+#content .contents
+{
+    float: left;
+    list-style: none;
+    margin: 20px;
+    font-family: Cambria;
+    font-size: 25px;
+    line-height: 40px;
+    padding-left: 15px;
+    color: olive;
+    width: 260px;
+    display: grid;
+ 
+}
+.contents a
+{
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 20px;
+    color: crimson;
+    border-right: 2px solid burlywood;
+
+}
+.contents li:hover
+{
+    background-color: rgb(157, 235, 199);
+    text-shadow: 20px 20px 40px 20px rgb(77, 42, 102,0.75);
+    font-weight: bold;
+    width: 255px;  
+    transition:cubic-bezier(0.6, 0.4, 0.98, 0.335);
+    transition-duration: 0.5s;
+    
+}
+.contents li
+{
+padding-left: 20px;
+}
+
+
+
+/* Introduction part */
+.intro
+{
+    
+    left: 300px;   
+     margin:12px 12px 60px;
+     font-family: Cambria;
+}
+.intro h1
+{
+    font-size: 35px;
+}
+.intro p
+{
+    line-height: 30px;
+    font-size: 18px;
+    margin:20px 10px 0 0;
+    text-align: justify;
+    }
+    .intro abbr
+    {
+        text-decoration: none;
+    }
+/* Early life and education part */
+.early h1
+{
+    font-family: Cambria;
+    font-size: 30px;
+    margin-left: 50px;
+   
+}
+.early p
+
+{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-family: cambria;
+    width: 95%;
+    text-align: justify;
+}
+/* Career as a scientist */
+.career h1
+{
+        font-family: Cambria;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: 20px;
+}
+.career p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-family: cambria;
+    width: 95%;
+    text-align: justify;
+}
+/* presidency  part */
+.presidency h1
+{
+    font-family: Cambria;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.presidency p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-family: cambria;   
+    width: 95%;
+    text-align: justify;
+}
+
+#combin
+{
+    
+  overflow: auto;  
+}
+.presidency figure  
+{
+  
+    border: none;
+    text-align: center;
+    font-family: Cambria;
+    
+}
+.presidency q
+{
+    float: left;
+    font-size: 22px;
+    font-family: Cambria;
+   line-height: 50px;
+    padding-left: 55px;
+    margin-top: 75px;
+    margin-bottom: 115px;
+}
+
+/* Pre presidency part */
+.pp h1
+{
+    font-family: Cambria;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;  
+}
+.pp p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-family: cambria;   
+    width: 95%;
+    text-align: justify;
+}
+.pp video
+{
+    float: left;
+    margin: 20px 50px 20px;
+   max-width: 560px;
+
+}
+/*Death part */
+
+    .death h1
+{
+    font-family: Cambria;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 100 px;  
+}
+.death p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-family: cambria;   
+    width: 95%;
+    text-align: justify;
+}
+/* .death audio
+{
+   visibility: hidden; 
+} */
+/* footer part */
+footer a
+{
+
+display: inline-block;
+color: white;
+text-decoration: none;
+font-size: 18px;
+font-family: Cambria;
+padding:1rem;
+padding-inline: 120px;
+}
+footer
+{
+    
+    background-color: black;
+    margin-top: 15px;
+    bottom:0%;
+    width: 100%;
+}
+
+footer a:hover
+{
+
+background-color: rgb(216, 213, 213);
+color: rgb(35, 30, 30);
+}
+/* back to content */
+.span a
+{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    body
+    {
+       
+        text-align: justify;
+        margin-right: 100%;
+        padding-inline-end: 16%;
+        background-color: rgb(175, 182, 145);
+    }
+    video
+    {
+        width: 300px;
+        max-width: 300px;
+       
+    }
+    footer 
+    {
+       width: 100%;
+       background-color: brown;
+       column-count: 1;
+    
+       
+    
+    }
+    #h1
+    {
+       width: 100%;
+       height:fit-content;
+       
+    }
+    .intro
+    {
+        padding-left: 50px;
+    }
+    nav a
+    {
+    position: absolute;
+     float: left;
+     left: 10%;
+     top: 200px;
+     grid-column: span;
+    }
+    
+    figure
+    {
+        margin-left: 50px;
+        margin-top: 5px;
+        width: auto;
+    }
+    
+    }
+    
+@media screen and (max-width:400px) {
+
+    
+
+    body
+    {
+       
+        text-align: justify;
+        margin-right: 100%;
+        padding-inline-end: 16%;
+        background-color: rgb(212, 212, 153);
+    }
+    video
+    {
+        width: 300px;
+        max-width: 300px;
+       
+    }
+    footer 
+    {
+       width: 100%;
+       background-color: brown;
+       column-count: 1;  
+    
+    }
+    #h1
+    {
+       width: fit-content;
+       height: inherit;
+      
+       
+    }
+    .intro
+    {
+        padding-left: 50px;
+    }   
+    figure
+    {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+
+   
+}
+    

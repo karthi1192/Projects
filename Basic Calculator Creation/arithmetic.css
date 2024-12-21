@@ -1,0 +1,88 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div
+{
+   text-align:  center;
+    margin: 10% ;
+    justify-items: center;
+
+}
+body
+{
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4OC1rems1M2d1MC5qcGc.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+
+}
+h1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: 60px;
+    margin-bottom: 22px;
+}
+input
+{
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    padding:6px;
+    margin: 15px 15px 0 0;
+    text-align: center;
+    border-color: cornsilk; 
+    background-color: transparent;
+    color: floralwhite;
+    font-size: 18px;
+     border-radius: 20px;
+}
+input:hover
+{
+    border: 1px solid rgb(241, 233, 233);
+    text-shadow: 20px  ;
+    color: floralwhite;   
+    background-origin: padding-box;
+}
+
+p
+{
+    color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    padding: 10px;
+    margin: 50px 320px 50px 320px;
+    border-spacing: 0px;
+    font-size: 28px;   
+    border-radius: 25px;
+    
+}
+
+button
+{
+    background: none;
+    color: aliceblue;
+    padding: 15px;
+    width: 100px;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    margin: 5px;
+    
+}
+::-webkit-input-placeholder
+{
+    color:aliceblue;
+    opacity: 0.5;
+    font-size: medium;
+    transition: opacity -2px;
+}
+button:hover
+{
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-duration: 0.5s;
+    background-color: beige;
+    color: black;
+}
+
+
+

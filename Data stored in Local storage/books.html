@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div>
+        <h1 class="navibar">Books</h1>  
+         
+         <p id="time"></p>
+    
+    </div>
+   
+    <div class="container">
+        <div class="book-container">
+
+            <h2>APJ Adul Kalam</h2>
+            <h5>Adul</h5>
+            <p>Lorem ipsum  dolor sit amet consectetur, adipisicing elit. Iusto nostrum neque veniam consequuntur sit. Enim doloremque ea modi expedita illo atque voluptatum, aut, necessitatibus ducimus dolor aspernatur sed animi perspiciatis!</p>
+            <button class="del" onclick="delbook(event)">Delete</button></div>
+        
+        <button class="plus" id="pop">+</button>
+        <div class="pop-overlay"></div>
+        <div class="pop-box">
+            <h2>Add Book</h2>
+            <form>
+                <input required type="text"  placeholder="Book Title*" id="book-title" maxlength="20" >
+                <input type="text" required placeholder="Book Author*" id="book-author" maxlength="20" >
+                <textarea placeholder="Short Description"  id="book-description" maxlength="5000"></textarea>
+    
+                <button type="submit" id="add-book" >Add</button>
+                <button type="reset" id="cancel-book">Cancel</button>
+            </form>
+            
+        </div>
+    </div>
+<script src="books.js"></script>
+
+    
+</body>
+</html>

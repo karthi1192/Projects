@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>True|2024-11-21T13:59:22.2549740Z||;True|2024-11-21T19:13:21.4799790+05:30||;True|2024-11-21T18:55:59.7207106+05:30||;True|2024-11-21T13:42:08.0161611+05:30||;True|2024-11-21T12:35:17.7575193+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EmployeeConnection">
+      <Value>Data Source=KAVINKARTHIK%3bInitial Catalog=SampleDB%3bIntegrated Security=True%3bTrust Server Certificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

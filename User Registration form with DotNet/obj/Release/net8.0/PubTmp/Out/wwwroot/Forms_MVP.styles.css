@@ -1,0 +1,49 @@
+/* _content/Forms_MVP/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-suulpdf56u] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-suulpdf56u] {
+  color: #0077cc;
+}
+
+.btn-primary[b-suulpdf56u] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-suulpdf56u], .nav-pills .show > .nav-link[b-suulpdf56u] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-suulpdf56u] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-suulpdf56u] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-suulpdf56u] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-suulpdf56u] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-suulpdf56u] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

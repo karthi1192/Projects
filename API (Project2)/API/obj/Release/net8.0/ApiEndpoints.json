@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "API.Controllers.AuthorizedController",
+    "Method": "GetAuthorized",
+    "RelativePath": "api/Authorized/getData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeesController",
+    "Method": "FetchEmployees",
+    "RelativePath": "api/Employees/fetch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
